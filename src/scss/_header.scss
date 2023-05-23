@@ -25,16 +25,43 @@ nav {
 
 .menu {
   display: flex;
+  align-items: center;
 
   // .menu__item
   &__item {
     margin-left: 25px;
+
+    &:last-child {
+      background-color: #903277;
+      padding: 14px 25px;
+      border-radius: 6px;
+      .menu__item-link {
+        color: white;
+      }
+    }
   }
 
   // .menu__item-link
   &__item-link {
     color: black;
     font-size: 18px;
+  }
+}
+
+.menu {
+  // .menu__social
+  &__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  // .menu__social-link
+  &__social-link {
+    img {
+      width: auto;
+      height: 35px;
+    }
   }
 }
 
@@ -48,7 +75,7 @@ nav {
   // .menu
   .menu {
     position: fixed;
-    background: #131418;
+    background: white;
     left: 0;
     top: 0;
     height: 100vh;
@@ -131,11 +158,12 @@ nav {
 
   // .menu__item
   .menu__item {
-    margin-top: 15px;
+    margin-top: 25px;
   }
 
   // .menu__link
   .menu__item-link {
-    color: white;
+    color: black;
+    font-size: 25px;
   }
 }
