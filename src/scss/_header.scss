@@ -33,7 +33,7 @@ nav {
 
     &:last-child {
       background-color: #903277;
-      padding: 14px 25px;
+      padding: 12px 22px;
       border-radius: 6px;
       .menu__item-link {
         color: white;
@@ -55,12 +55,20 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 15px;
+    @media (max-width: $breakpoint768 ) {
+      justify-content: space-between;
+      gap: 25px;
+    }
   }
   // .menu__social-link
   &__social-link {
     img {
       width: auto;
       height: 35px;
+
+      @media (max-width: $breakpoint768 ) {
+        height: 45px;
+      }
     }
   }
 }

@@ -1,0 +1,38 @@
+.section {
+  // .section__hero
+  &__hero {
+   
+  }
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // background-image: url("../img/final/dimo.jpg");
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // height: 900px;
+  // .hero__item
+  &__item {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  // .hero__item-title
+  &__item-title {
+    font-size: 84px;
+    line-height: 1.1;
+    font-weight: 800;
+  }
+  // .hero__item-img
+  &__item-img {
+  }
+}
+.img_hero {
+  height: auto;
+  width: 700px;
+  border-radius: 20px;
+}
+sup {
+  font-size: 20px;
+}
