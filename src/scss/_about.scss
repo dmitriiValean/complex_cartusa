@@ -2,12 +2,12 @@
   // .about_section
   &_section {
   }
-  // .about_item
-  &_item {
-  }
+
   // .about__item
   &__item {
     padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -19,7 +19,6 @@
     align-items: center;
     gap: 20px;
     padding: 20px 0px 20px 0px;
-  
   }
   // .point_item
   &_item {
@@ -28,7 +27,6 @@
     align-items: center;
     text-align: left;
     gap: 20px;
-   
   }
   // .point_item-img
   &_item-img {
@@ -51,6 +49,12 @@
 .info {
   // .info_about
   &_about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-direction: column;
+    padding-top: 20px;
   }
   // .info_item
   &_item {
@@ -59,20 +63,93 @@
 .description {
   // .description_info
   &_info {
+    display: flex;
+    gap: 20px;
+  }
+  &_info-text {
+    li {
+      list-style-type: disc;
+      list-style-position: inside;
+      padding: 10px 10px;
+      margin: 0;
+      line-height: 1.3;
+      font-weight: 400;
+      font-size: 15px;
+      letter-spacing: 0.2px;
+    }
+  }
+
+  &_info-img {
+    flex: 0 0 550px;
+
+    img {
+      max-width: 100%;
+      object-fit: contain;
+    }
+  }
+  &_title {
+    margin-bottom: 20px;
+    line-height: 1.3;
+    font-weight: 600;
+    font-size: 22px;
+    text-align: left;
+    padding: 0 0 6px 10px;
+    border-left: 10px solid #923177;
+    border-bottom: 3px solid #923177;
   }
 }
 .whitebox {
   // .whitebox_info
   &_info {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: space-between;
+    // flex-direction: column;
   }
   // .whitebox_info-text
   &_info-text {
+    line-height: 1.3;
+    font-weight: 500;
+    font-size: 15px;
+
+    h4 {
+      line-height: 1.5;
+      font-weight: 500;
+      font-size: 18px;
+      padding-bottom: 15px;
+      text-align: left;
+      padding: 0 0 6px 10px;
+      border-left: 10px solid #923177;
+      border-bottom: 3px solid #923177;
+    }
+
+    p {
+      padding-top: 15px;
+    }
   }
-  // .whitebox_info-text
-  &_info-text {
+
+  &_info-text_other {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    line-height: 1.3;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  &_img {
+    display: flex;
+    gap: 20px;
   }
   // .whitebox_info-img
   &_info-img {
+    max-width: 250px;
+    height: auto;
+    // padding: 15px;
+
+    img {
+      max-width: 100%;
+      object-fit: contain;
+    }
   }
 }
 hr {
